@@ -2,6 +2,7 @@ body {
     height: 100vh;
     display: block;
     margin: 0 8px;
+    background-color: darkseagreen;
 }
 
 .calendar {
