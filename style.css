@@ -47,11 +47,13 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: darkred;
     border-radius: 25px;
+    border: none !important;
     margin: 5%;
     padding: 20px;
     border: 1px solid #888;
@@ -70,6 +72,8 @@ body {
   }
 
   .video-iframe {
+    border: none !important;
+    border-radius: 25px;
     height: 90%;
     width: 100%;
   }
