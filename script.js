@@ -12,9 +12,11 @@ doors.forEach(door => {
     }
   }
   door.addEventListener('click', () => {
-    const videoUrl = door.dataset.video;
-    videoIframe.src = videoUrl;
-    modal.style.display = 'block';
+    if (!door.classList.contains('disabled')) {
+      const videoUrl = door.dataset.video;
+      videoIframe.src = videoUrl;
+      modal.style.display = 'block';
+    }
   });
 });
 
