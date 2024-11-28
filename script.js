@@ -4,8 +4,12 @@ const videoIframe = document.getElementById('videoIframe');
 const closeButton = document.querySelector('.close-button');
 
 // Hardcode date to 10th November
-const date = new Date('2024-11-10');
-// const date = new Date;
+let date = new Date;
+
+// For testing before December (+1 because Month is 0 indexed)
+if (date.getMonth() +1 !== 12) {
+  date = new Date('2024-11-10');
+}
 
 doors.forEach(door => {
   // Disable future doors
