@@ -2,18 +2,23 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* Adjust for desired layout */
     gap: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
   .door {
+    color: white;
+    font-family: cursive;
     width: 80px;
     height: 80px;
-    background-color: #ccc;
+    background-color: indianred;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     cursor: pointer;
-    border: 2px solid #333;
+    border: 2px solid white;
+    border-radius: 15px;
   }
   
   .modal {
@@ -30,10 +35,22 @@
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    border-radius: 25px;
+    margin: 5%;
     padding: 20px;
     border: 1px solid #888;
-    width: 60%;
+    height: -webkit-fill-available;
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: system-ui;
+  }
+
+  .video-iframe {
+    height: 90%;
+    width: 100%;
   }
   
   .close-button {
