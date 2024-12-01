@@ -13,7 +13,7 @@ if (date.getMonth() +1 !== 12) {
 
 doors.forEach(door => {
   // Disable future doors
-  if (date.getMonth() + 1 === 11) {
+  if (date.getMonth() + 1 === 12) {
     if (date.getDate() >= Number(door.textContent)) {
       door.classList.remove('disabled');
     }
